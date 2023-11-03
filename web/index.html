@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Products</title>
+  </head>
+  <body onload="getAllProducts()">
+    <h1>API integration</h1>
+
+    <form onsubmit="addProduct(); return false">
+      Name: <input type="text" id="name" />
+      <br />
+      Price: <input type="number" id="price" />
+      <br />
+      Description: <input type="text" id="desc" />
+      <br />
+
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div id="result"></div>
+
+    <div id="productList" class="productList"></div>
+
+    <script src="./app.mjs"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
